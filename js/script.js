@@ -1,7 +1,7 @@
-// Vendos vitin aktual në footer
+// 1) Vendos vitin aktual në footer
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Event për butonin CTA në index
+// 2) Event për butonin CTA në index (nëse ekziston në faqe)
 const cta = document.getElementById("cta-btn");
 if (cta) {
   cta.addEventListener("click", () => {

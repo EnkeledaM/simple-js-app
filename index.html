@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="sq">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8"><!-- Kodimi i shkronjave -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kreu • Enkeleda</title>
-  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Lidhim CSS e projektit -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <!-- Header me logo dhe navigim i përbashkët -->
   <header class="site-header">
     <a class="logo" href="index.html">Enkeleda</a>
     <nav class="nav">
@@ -16,20 +19,23 @@
     </nav>
   </header>
 
+  <!-- Përmbajtja kryesore -->
   <main class="container">
     <section class="hero">
-      <!-- Nëse nuk ke foto, hiqe <img> ose lëre src te një placeholder -->
-      <img src="img/enkeleda.jpg" alt="Enkeleda" class="avatar" />
+      <!-- vendos foton në /img nëse e ke -->
+      <img src="img/enkeleda.jpg" alt="Enkeleda" class="avatar">
       <h1>Mirë se erdhe në portofolin tim!</h1>
       <p>Frontend në formim • SAP BI/BW background • Projekte praktike në JS/HTML/CSS.</p>
-      <button id="cta-btn">Kontakto</button>
+      <button id="cta-btn">Kontakto</button><!-- do kapet nga JS -->
     </section>
   </main>
 
+  <!-- Footer me vit dinamik (plotësohet nga JS) -->
   <footer class="site-footer">
     <small>&copy; <span id="year"></span> Enkeleda</small>
   </footer>
 
+  <!-- Lidhim skriptin JS (vendosur para mbylljes së body për ngarkim më të shpejtë) -->
   <script src="js/script.js"></script>
 </body>
 </html>

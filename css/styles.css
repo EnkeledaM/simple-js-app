@@ -1,6 +1,6 @@
-:root { --maxw: 980px; }
+:root { --maxw: 980px; }          /* Variabël për gjerësi max */
 
-* { box-sizing: border-box; }
+* { box-sizing: border-box; }     /* Llogarit margjina/padding brenda kutisë */
 
 body {
   margin: 0;
@@ -10,14 +10,14 @@ body {
   background: #f7f7fb;
 }
 
-/* Layout bazë */
+/* Kontejner qendror me max-width */
 .container {
   max-width: var(--maxw);
   padding: 24px;
   margin: 0 auto;
 }
 
-/* Header & Footer */
+/* Header/Footer të thjeshtë me border dhe spacing */
 .site-header, .site-footer {
   background: #fff;
   border-bottom: 1px solid #eee;
@@ -29,15 +29,15 @@ body {
   padding: 14px 24px;
 }
 
+/* Logo & Nav */
 .logo { font-weight: 700; text-decoration: none; color: #222; }
-
 .nav a {
   margin-left: 16px; text-decoration: none; color: #444;
   padding: 6px 10px; border-radius: 8px;
 }
 .nav a.active, .nav a:hover { background: #efeff6; }
 
-/* Hero */
+/* Hero me avatar rrethor */
 .hero { text-align: center; padding: 48px 0; }
 .avatar {
   width: 140px; height: 140px; border-radius: 50%;
@@ -45,7 +45,7 @@ body {
   border: 3px solid #fff; box-shadow: 0 4px 16px rgba(0,0,0,.08);
 }
 
-/* Buttons */
+/* Butona primarë */
 button, .btn {
   display: inline-block; border: 0; padding: 10px 16px;
   background: #4f46e5; color: #fff; border-radius: 10px;
@@ -53,7 +53,7 @@ button, .btn {
 }
 button:hover, .btn:hover { filter: brightness(1.05); }
 
-/* Grid Projects */
+/* Grid projektesh responsive */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
@@ -65,6 +65,8 @@ button:hover, .btn:hover { filter: brightness(1.05); }
 }
 .card h3 { margin-top: 0; }
 
-/* Misc */
+/* Lista aftësish */
 .skills { padding-left: 18px; }
+
+/* Footer tekst pak i zbehtë */
 .site-footer small { opacity: .8; }
