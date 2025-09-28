@@ -1,47 +1,17 @@
 <!DOCTYPE html>
-<html lang="sq">
+<html lang="en">
 <head>
-  <meta charset="UTF-8"><!-- Kodimi i shkronjave -->
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kreu • Enkeleda</title>
-
-  <!-- Lidhim CSS e projektit -->
+  <title>Simple JS App</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- Header me logo dhe navigim i përbashkët -->
-  <header class="site-header">
-    <a class="logo" href="index.html">Enkeleda</a>
-    <nav class="nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="work.html">Work</a>
-    </nav>
-  </header>
+  <h1>Simple JS App</h1>
+  <p>If everything is set up correctly, you should see a "Hello world" pop-up
+     and below this text the favorite food variable printed from JavaScript.</p>
 
-  <!-- Përmbajtja kryesore -->
- 
- 
-<main class="container">
-  <section class="hero">
-    <!-- Nëse nuk ke foto, hiqe këtë rresht -->
-    <img src="img/enkeleda.jpg" alt="Enkeleda" class="avatar">
-
-    <h1>Mirë se erdhe në portofolin tim!</h1>
-    <p>Frontend në formim • SAP BI/BW background • Projekte praktike në JS/HTML/CSS.</p>
-
-    <!-- Këtu shtohet butoni -->
-    <button id="cta-btn">Kontakto</button>
-  </section>
-</main>
-
-
-  <!-- Footer me vit dinamik (plotësohet nga JS) -->
-  <footer class="site-footer">
-    <small>&copy; <span id="year"></span> Enkeleda</small>
-  </footer>
-
-  <!-- Lidhim skriptin JS (vendosur para mbylljes së body për ngarkim më të shpejtë) -->
-  <script src="js/script.js"></script>
+  <!-- Important: no defer, so document.write() runs at this point -->
+  <script src="js/scripts.js"></script>
 </body>
 </html>
